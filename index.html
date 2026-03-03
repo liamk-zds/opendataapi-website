@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Webpage</title>
+    <title>Open Data API Australia - Coming Soon</title>
     <style>
         /* CSS: The "Paint and Decor" */
         body {
@@ -17,7 +17,7 @@
         header {
             background: #2c3e50;
             color: white;
-            padding: 2rem;
+            padding: 3rem 1rem; /* Increased padding for a hero feel */
             text-align: center;
         }
 
@@ -29,28 +29,28 @@
 
         .card {
             background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            
+            /* --- CENTERING LOGIC START --- */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* --- CENTERING LOGIC END --- */
         }
 
-        button {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        button:hover {
-            background: #2980b9;
+        .card img {
+            width: 100%; 
+            max-width: 300px; 
+            border-radius: 8px; 
+            margin: 1.5rem 0; /* Space above and below the GIF */
         }
 
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem;
             font-size: 0.9rem;
             color: #777;
         }
@@ -59,27 +59,23 @@
 <body>
 
     <header>
-        <h1>Welcome to Open Data API Australia</h1>
+        <h1>Open Data API Australia</h1>
+        <p>Empowering insights through open access.</p>
     </header>
 
     <div class="container">
         <div class="card">
             <h2>Coming Soon</h2>
-            <img src="construction.gif"
-              alt="Under Construction" 
-              style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
-            <p></p>
+            
+            <img src="construction.gif" alt="Under Construction">
+            
+            <p>Our developers are hard at work building the portal. Stay tuned!</p>
         </div>
     </div>
 
-    <footer></footer>
-
-    <script>
-        // JavaScript: The "Logic"
-        function greet() {
-            alert("Hello! Your website is officially alive.");
-        }
-    </script>
+    <footer>
+        &copy; 2026 Open Data API Australia
+    </footer>
 
 </body>
 </html>
